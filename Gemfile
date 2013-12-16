@@ -14,6 +14,10 @@ group :test, :development do
   gem 'database_cleaner'
 end
 
+group :development do
+  gem 'guard-cucumber'
+  gem 'guard-rspec'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
