@@ -7,7 +7,7 @@ gem 'rails', '3.2.14'
 
 gem 'pg'
 
-group :test do
+group :test, :development do
   gem 'rspec-rails'
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
