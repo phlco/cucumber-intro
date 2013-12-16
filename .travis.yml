@@ -5,6 +5,7 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - "export DISPLAY=:99.0"
   - "export JASMINE_SPEC_FORMAT=documentation"
+  - "chmod +x ci_setup"
   - "./script/ci_setup"
 script:
   - "bundle exec rake travis"
